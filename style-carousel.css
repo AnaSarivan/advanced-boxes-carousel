@@ -1,0 +1,50 @@
+body {
+    background-color: #456;
+
+}
+.carousel {
+    width: 840px;    
+    /*border: 3px solid yellow;*/
+    /*new center a block horizontaly*/
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px #111;   
+}
+
+.carousel .slide {
+    width: 2640px;
+    /*border: 2px solid red;*/
+    transition: 1s;   
+}
+
+.carousel .controls {
+    text-align: center;
+}
+
+.carousel .controls a {
+    color: rgb(236, 174, 174);
+    text-decoration: none;
+    padding: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+.carousel .controls a:hover {
+    color: white;
+
+}
+
+.carousel #left:target .slide {
+    transform: translateX(0px);
+}
+
+.carousel #middle:target .slide {
+    transform: translateX(-840px);
+}
+
+.carousel #right:target .slide {
+    transform: translateX(-1680px);
+}
+
+

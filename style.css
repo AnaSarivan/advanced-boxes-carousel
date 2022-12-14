@@ -1,0 +1,55 @@
+body {
+    background-color: #456;
+    font-family: Arial;
+}
+
+#subscribe-form {
+  color: white;
+}
+
+#subscribe-form label {
+    display: block;
+    padding: 5px;
+}
+
+#subscribe-form>label>input {
+    padding: 5px;
+    background-color: #ddd;
+    /* new*/
+    outline: none;
+    border: 1px solid #123;
+
+}
+#subscribe-form>label>input:focus {
+    background-color: #fff;
+} 
+
+#subscribe-form>label>input:valid {
+    border-color: greenyellow;
+}
+#subscribe-form>label>input:invalid {
+    border-color: red;
+}
+#subscribe-form button {
+    background-color: #123;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+}
+#subscribe-form span {
+    color: #89a;
+}
+#subscribe-form input:checked + span {
+    color: white;
+}
+#subscribe-form>div>label>input {
+    display: none;
+}
+#subscribe-form>div>label>input + span::before {
+    content: "◯";
+    padding-right: 5px;
+}
+#subscribe-form>div>label>input:checked + span::before {
+    content: "◉";
+}
+
